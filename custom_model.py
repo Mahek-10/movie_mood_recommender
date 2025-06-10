@@ -10,9 +10,18 @@ data = {
         "I'm feeling very low and sad",
         "This is such a romantic day",
         "I want to do something productive",
-        "Feeling energetic and thrilled"
+        "Feeling energetic and thrilled",
+        "Everything feels dull and boring",
+        "I'm in love!",
+        "I’m really mad and angry right now",
+        "I feel relaxed and calm",
+        "That movie gave me goosebumps – so scary!",
+        "This is so inspiring!",
     ],
-    "mood": ["happy", "sad", "romantic", "motivated", "excited"]
+    "mood": [
+        "happy", "sad", "romantic", "motivated", "excited",
+        "bored", "romantic", "angry", "relaxed", "fearful", "inspired"
+    ]
 }
 
 df = pd.DataFrame(data)
