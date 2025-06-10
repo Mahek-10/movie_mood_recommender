@@ -1,6 +1,14 @@
-title,genre,mood
-The Pursuit of Happyness,Drama,motivated
-Inside Out,Animation,sad
-La La Land,Musical,romantic
-The Dark Knight,Action,excited
-Frozen,Animation,happy
+title,mood,genre,year
+La La Land,romantic,Musical,2016
+The Notebook,romantic,Drama,2004
+Inside Out,sad,Animation,2015
+The Pursuit of Happyness,motivated,Biography,2006
+Frozen,happy,Animation,2013
+Avengers: Endgame,excited,Action,2019
+Zootopia,happy,Animation,2016
+Joker,angry,Drama,2019
+Soul,relaxed,Animation,2020
+Interstellar,inspired,Sci-Fi,2014
+The Shining,fearful,Horror,1980
+The Big Lebowski,bored,Comedy,1998
+...
