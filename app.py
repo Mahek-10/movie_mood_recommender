@@ -108,3 +108,4 @@ if user_favs:
         st.write(f"⭐ {fav}")
 else:
     st.info("You haven't added any favorites yet.")
+
