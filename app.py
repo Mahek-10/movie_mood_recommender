@@ -1,111 +1,73 @@
 import streamlit as st
 import pandas as pd
-import json
-import os
 from mood_model import detect_mood
 from ml_model_predictor import predict_mood
 
-# Initialize session state
+# In-memory user store for demo purposes
 if "users" not in st.session_state:
-    st.session_state.users = {}
+    st.session_state.users = {}  # {username: password}
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "username" not in st.session_state:
     st.session_state.username = ""
-if "favorites" not in st.session_state:
-    st.session_state.favorites = {}
 
-# Load movie data
-@st.cache_data
-def load_movies():
-    try:
-        return pd.read_csv("movies.csv")
-    except:
-        return pd.DataFrame(columns=["title", "mood", "genre", "year"])
-
-movies_df = load_movies()
-
-# Styling
-st.markdown("""
-    <style>
-    body {
-        background-color: #f0f2f6;
-    }
-    .title {
-        font-size: 36px;
-        color: #FF4B4B;
-        font-weight: bold;
-    }
-    .subtitle {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# --- Authentication ---
+# Sign-up function
 def signup():
-    st.subheader("🔐 Create Account")
-    user = st.text_input("New Username")
-    pw = st.text_input("New Password", type="password")
+    st.subheader("🔐 Create New Account")
+    new_user = st.text_input("New Username")
+    new_pass = st.text_input("New Password", type="password")
     if st.button("Sign Up"):
-        if user in st.session_state.users:
+        if new_user in st.session_state.users:
             st.error("User already exists.")
         else:
-            st.session_state.users[user] = pw
-            st.success("Account created! Please login.")
+            st.session_state.users[new_user] = new_pass
+            st.success("Account created! Please log in.")
 
+# Login function
 def login():
     st.subheader("🔓 Login")
     user = st.text_input("Username")
-    pw = st.text_input("Password", type="password")
+    passwd = st.text_input("Password", type="password")
     if st.button("Login"):
-        if user in st.session_state.users and st.session_state.users[user] == pw:
+        if user in st.session_state.users and st.session_state.users[user] == passwd:
             st.session_state.logged_in = True
             st.session_state.username = user
-            if user not in st.session_state.favorites:
-                st.session_state.favorites[user] = []
             st.success(f"Welcome back, {user}!")
         else:
-            st.error("Invalid credentials")
+            st.error("Invalid username or password.")
 
+# Auth system
 if not st.session_state.logged_in:
-    st.title("🎬 Movie Mood Recommender")
-    choice = st.radio("Select Option", ["Login", "Sign Up"])
-    login() if choice == "Login" else signup()
+    page = st.selectbox("Choose Option", ["Login", "Sign Up"])
+    if page == "Login":
+        login()
+    else:
+        signup()
     st.stop()
 
-# --- Main App ---
+# Main App after login
 st.title("🎬 Movie Mood Recommender")
 st.write(f"👤 Logged in as: `{st.session_state.username}`")
 
-user_input = st.text_input("💬 How are you feeling right now?")
-use_custom_model = st.checkbox("Use Custom ML Mood Predictor")
+user_input = st.text_input("How are you feeling right now?")
+use_custom_model = st.checkbox("Use Custom Trained Model")
 
 if user_input:
-    mood = predict_mood(user_input) if use_custom_model else detect_mood(user_input)
-    st.success(f"🧠 Detected mood: **{mood}**")
-
-    recs = movies_df[movies_df["mood"].str.lower() == mood.lower()]
-    if not recs.empty:
-        st.subheader("🎥 Recommended Movies for Your Mood:")
-        for idx, row in recs.iterrows():
-            col1, col2 = st.columns([5, 1])
-            col1.markdown(f"✅ **{row['title']}** ({row['year']}) — *{row['genre']}*")
-            if col2.button("❤️ Fav", key=f"fav_{idx}"):
-                st.session_state.favorites[st.session_state.username].append(row['title'])
-                st.success(f"Added '{row['title']}' to favorites.")
+    if use_custom_model:
+        mood = predict_mood(user_input)
+        st.write(f"Predicted mood (Custom ML): **{mood}**")
     else:
-        st.warning("No movie found for this mood.")
+        mood = detect_mood(user_input)
+        st.write(f"Predicted mood (Pre-trained NLP): **{mood}**")
 
-# --- Favorite Section ---
-st.markdown("---")
-st.subheader("❤️ Your Favorites")
-user_favs = st.session_state.favorites.get(st.session_state.username, [])
-if user_favs:
-    for fav in user_favs:
-        st.write(f"⭐ {fav}")
-else:
-    st.info("You haven't added any favorites yet.")
-
+    try:
+        df = pd.read_csv("movies.csv")
+        recs = df[df["mood"].str.lower() == mood.lower()]
+        if not recs.empty:
+            st.subheader("🎥 Recommended Movies:")
+            for title in recs["title"].values:
+                st.write(f"✅ {title}")
+        else:
+            st.warning("No movies found for this mood.")
+    except Exception as e:
+        st.error(f"Error loading movie data: {e}")
