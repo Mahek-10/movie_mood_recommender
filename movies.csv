@@ -8,7 +8,7 @@ Avengers: Endgame,excited,Action,2019
 Zootopia,happy,Animation,2016
 Joker,angry,Drama,2019
 Soul,relaxed,Animation,2020
-Interstellar,inspired,Sci-Fi,2014
+Interstellar,inspirational,Sci-Fi,2014
 The Shining,fearful,Horror,1980
 The Big Lebowski,bored,Comedy,1998
 Paddington,happy,Family,2014
@@ -42,7 +42,7 @@ A Bag of Hammers,Comedy,Drama,2011
 A Band Called Death,Inspirational,Biography,2012
 A Band Called Death,Rebellious,Biography,2012
 A Billon Lives,Provocative,Documentary,2016
-A Billion Lives,Motivational,Documentary,2016
+A Billion Lives,Motivated,Documentary,2016
 A Big Hand for Little Lady,Clever,Comedy,1966
 A Big Hand for Little Lady,Entertaining,Comedy,1966
 A Bit of Fry and Laurie,Witty,Series,1995
@@ -105,10 +105,10 @@ Zindagi Na Milegi Dobara,happy,Drama,2011
 3 Idiots,motivated,Comedy,2009
 Gully Boy,motivated,Drama,2019
 Queen,happy,Drama,2013
-Interstellar,inspired,Sci-Fi,2014
+Interstellar,inspirational,Sci-Fi,2014
 Bajrangi Bhaijaan,emotional,Drama,2015
 The Dark Knight,excited,Action,2008
-Andhadhun,suspense,Thriller,2018
+Andhadhun,suspenseful,Thriller,2018
 Shershaah,patriotic,War,2021
 Tamasha,romantic,Drama,2015
 Frozen,happy,Animation,2013
@@ -122,11 +122,11 @@ Kal Ho Naa Ho,sad,Drama,2003
 The Pursuit of Happyness,motivated,Biography,2006
 Titanic,romantic,Drama,1997
 Yeh Jawaani Hai Deewani,happy,Drama,2013
-Wake Up Sid,inspired,Drama,2009
+Wake Up Sid,inspirational,Drama,2009
 Tanhaji,patriotic,Action,2020
 Dear Zindagi,emotional,Drama,2016
 Barbie,happy,Comedy,2023
-Oppenheimer,inspired,Biography,2023
+Oppenheimer,inspirational,Biography,2023
 Pathaan,excited,Action,2023
 Drishyam 2,suspense,Thriller,2022
 Top Gun: Maverick,excited,Action,2022
@@ -141,9 +141,9 @@ Black Panther: Wakanda Forever,emotional,Action,2022
 Kantara,spiritual,Mythology,2022
 The Kashmir Files,emotional,Drama,2022
 Bheed,social,Drama,2023
-Gaslight,suspense,Thriller,2023
+Gaslight,suspenseful,Thriller,2023
 Mission Majnu,patriotic,Spy,2023
-The Fabelmans,inspired,Drama,2022
+The Fabelmans,inspirational,Drama,2022
 Everything Everywhere All At Once,wacky,Sci-Fi,2022
 Ala Vaikunthapurramuloo,happy,Drama,2020
 Radhe Shyam,romantic,Romance,2022
@@ -153,14 +153,14 @@ Sooryavanshi,excited,Action,2021
 Bell Bottom,patriotic,Thriller,2021
 Shiddat,romantic,Romance,2021
 Luca,happy,Animation,2021
-Soul,inspired,Animation,2020
+Soul,inspirational,Animation,2020
 Tenet,confused,Sci-Fi,2020
 No Time to Die,excited,Action,2021
-A Thursday,suspense,Thriller,2022
+A Thursday,suspenseful,Thriller,2022
 Badhaai Do,happy,Comedy,2022
 Atrangi Re,romantic,Drama,2021
 83,patriotic,Sports,2021
-Gunjan Saxena: The Kargil Girl,inspired,Biography,2020
+Gunjan Saxena: The Kargil Girl,inspirational,Biography,2020
 Dil Bechara,sad,Romance,2020
 Shubh Mangal Zyada Saavdhan,funny,Comedy,2020
 The Sky Is Pink,emotional,Drama,2019
@@ -172,8 +172,8 @@ Super 30,motivated,Biography,2019
 Good Newwz,funny,Comedy,2019
 Gully Boy,motivated,Drama,2019
 Luka Chuppi,romantic,Comedy,2019
-Mission Mangal,inspired,Sci-Fi,2019
-Chhichhore,inspired,Drama,2019
+Mission Mangal,inspirational,Sci-Fi,2019
+Chhichhore,inspirational,Drama,2019
 Thappad,social,Drama,2020
 Pagglait,emotional,Drama,2021
 The White Tiger,social,Drama,2021
@@ -186,7 +186,7 @@ Spider-Man: No Way Home,excited,Action,2021
 Encanto,happy,Animation,2021
 Turning Red,emotional,Animation,2022
 The Batman,suspense,Action,2022
-Dune,inspired,Sci-Fi,2021
+Dune,inspirational,Sci-Fi,2021
 Cruella,stylish,Crime,2021
 House of Gucci,dramatic,Biography,2021
 Don't Look Up,satirical,Comedy,2021
@@ -194,18 +194,18 @@ Red Notice,funny,Action,2021
 Jungle Cruise,adventurous,Fantasy,2021
 The Suicide Squad,wacky,Action,2021
 Minions: The Rise of Gru,funny,Animation,2022
-Lightyear,inspired,Animation,2022
+Lightyear,inspirational,Animation,2022
 Luck,happy,Animation,2022
 The Lost City,romantic,Adventure,2022
 Nope,mysterious,Horror,2022
-The Menu,suspense,Thriller,2022
+The Menu,suspenseful,Thriller,2022
 The Adam Project,excited,Sci-Fi,2022
-Scream (2022),suspense,Horror,2022
+Scream (2022),suspenseful,Horror,2022
 Smile,scary,Horror,2022
 The Black Phone,scary,Thriller,2022
 Don't Worry Darling,dramatic,Mystery,2022
 Amsterdam,confused,Mystery,2022
-Glass Onion: A Knives Out Mystery,suspense,Comedy,2022
+Glass Onion: A Knives Out Mystery,suspenseful,Comedy,2022
 The Banshees of Inisherin,sad,Drama,2022
 Tár,intense,Drama,2022
 Women Talking,social,Drama,2022
@@ -225,27 +225,27 @@ Wish,happy,Animation,2023
 Leo,excited,Action,2023
 Salaar,motivated,Action,2024
 Animal,intense,Thriller,2024
-Jigra,inspired,Drama,2024
+Jigra,inspirational,Drama,2024
 Fighter,excited,Action,2024
 Singham,patriotic,Action,2011
 Raazi,patriotic,Thriller,2018
-Neerja,inspired,Biography,2016
+Neerja,inspirational,Biography,2016
 Mad Max: Fury Road,excited,Action,2015
-Parasite,suspense,Drama,2019
+Parasite,suspenseful,Drama,2019
 1917,intense,War,2019
 Laal Singh Chaddha,emotional,Drama,2022
 PK,funny,Drama,2014
 Taare Zameen Par,emotional,Drama,2007
 The Revenant,intense,Adventure,2015
-The Imitation Game,inspired,Biography,2014
-Lincoln,inspired,Biography,2012
+The Imitation Game,inspirational,Biography,2014
+Lincoln,inspirational,Biography,2012
 Sardar Udham,patriotic,Biography,2021
 Slumdog Millionaire,motivated,Drama,2008
 Black,emotional,Drama,2005
 Rang De Basanti,patriotic,Drama,2006
-Swades,inspired,Drama,2004
+Swades,inspirational,Drama,2004
 Lagaan,motivated,Sports,2001
-The Social Network,inspired,Biography,2010
+The Social Network,inspirational,Biography,2010
 Her,romantic,Sci-Fi,2013
 Eternal Sunshine of the Spotless Mind,romantic,Drama,2004
 Manchester by the Sea,sad,Drama,2016
@@ -257,9 +257,9 @@ The Matrix,excited,Sci-Fi,1999
 Inception,suspense,Sci-Fi,2010
 The Prestige,mysterious,Drama,2006
 The Grand Budapest Hotel,funny,Comedy,2014
-Life of Pi,inspired,Adventure,2012
-The Secret Life of Walter Mitty,inspired,Adventure,2013
-Eat Pray Love,inspired,Drama,2010
+Life of Pi,inspirational,Adventure,2012
+The Secret Life of Walter Mitty,inspirational,Adventure,2013
+Eat Pray Love,inspirational,Drama,2010
 Julie & Julia,happy,Biography,2009
 Silver Linings Playbook,emotional,Drama,2012
 The Perks of Being a Wallflower,emotional,Drama,2012
@@ -272,11 +272,11 @@ The Intern,happy,Comedy,2015
 The Devil Wears Prada,stylish,Comedy,2006
 Joy,motivated,Biography,2015
 Steve Jobs,motivated,Biography,2015
-Hacksaw Ridge,inspired,War,2016
-Into the Wild,inspired,Adventure,2007
+Hacksaw Ridge,inspirational,War,2016
+Into the Wild,inspirational,Adventure,2007
 127 Hours,intense,Adventure,2010
-The Theory of Everything,inspired,Biography,2014
-Rocketry: The Nambi Effect,inspired,Biography,2022
+The Theory of Everything,inspirational,Biography,2014
+Rocketry: The Nambi Effect,inspirational,Biography,2022
 M.S. Dhoni: The Untold Story,motivated,Biography,2016
 Bhaag Milkha Bhaag,motivated,Biography,2013
 Mary Kom,motivated,Biography,2014
@@ -288,7 +288,7 @@ Tumbbad,mysterious,Horror,2018
 Bhool Bhulaiyaa 2,funny,Horror,2022
 Bajrangi Bhaijaan,emotional,Drama,2015
 Panga,motivated,Sports,2020
-Nil Battey Sannata,inspired,Drama,2015
+Nil Battey Sannata,inspirational,Drama,2015
 Airlift,patriotic,Thriller,2016
 Baby,patriotic,Action,2015
 Holiday,patriotic,Action,2014
@@ -297,7 +297,7 @@ Koi Mil Gaya,happy,Sci-Fi,2003
 Krrish,excited,Sci-Fi,2006
 Baahubali: The Beginning,excited,Action,2015
 Baahubali: The Conclusion,epic,Action,2017
-Manjhi: The Mountain Man,inspired,Biography,2015
+Manjhi: The Mountain Man,inspirational,Biography,2015
 Kaabil,motivated,Thriller,2017
 Talvar,serious,Crime,2015
 Badla,suspense,Thriller,2019
@@ -319,10 +319,10 @@ Glass,intense,Thriller,2019
 Old,mysterious,Thriller,2021
 Us,scary,Thriller,2019
 Get Out,scary,Thriller,2017
-Run,suspense,Thriller,2020
+Run,suspenseful,Thriller,2020
 The Invisible Man,scary,Thriller,2020
 Megan,scary,Sci-Fi,2023
-The Iron Lady,inspired,Biography,2011
+The Iron Lady,inspirational,Biography,2011
 Queen of Katwe,motivated,Biography,2016
 Brooklyn,romantic,Drama,2015
 The Danish Girl,emotional,Biography,2015
@@ -331,8 +331,8 @@ The Pianist,sad,War,2002
 The Boy in the Striped Pajamas,sad,Drama,2008
 The Book Thief,emotional,War,2013
 Bridge of Spies,serious,Thriller,2015
-Argo,suspense,Thriller,2012
-The King's Speech,inspired,Biography,2010
+Argo,suspenseful,Thriller,2012
+The King's Speech,inspirational,Biography,2010
 Moneyball,motivated,Sports,2011
 The Blind Side,motivated,Drama,2009
 The Help,social,Drama,2011
@@ -342,7 +342,7 @@ Fruitvale Station,emotional,Drama,2013
 Moonlight,emotional,Drama,2016
 Room,intense,Drama,2015
 Lady Bird,dramatic,Comedy,2017
-The Founder,inspired,Biography,2016
+The Founder,inspirational,Biography,2016
 The Pursuit of Happyness,motivated,Biography,2006
 Ratatouille,happy,Animation,2007
 Zootopia,funny,Animation,2016
@@ -353,7 +353,7 @@ Finding Nemo,hopeful,Animation,2003
 Finding Dory,happy,Animation,2016
 Turning Red,emotional,Animation,2022
 Luca,happy,Animation,2021
-WALL-E,inspired,Animation,2008
+WALL-E,inspirational,Animation,2008
 Onward,emotional,Animation,2020
 Brave,courageous,Animation,2012
 Moana,hopeful,Animation,2016
