@@ -132,7 +132,7 @@ return model.predict(X)[0]
 Uses the trained model to predict the mood of the input.
 .predict(X) returns a list/array of predictions, so [0] takes the first result.
 
-✅ Summary Table
+**✅ Summary Table of mood_model.py**
 Strategy: Method Used: Output Example
 Keyword match:"furious", "rage":angry
 Keyword match:"wholesome", "sweetheartwarming
