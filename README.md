@@ -145,4 +145,3 @@ Integrate real-time movie APIs like TMDb for dynamic recommendations
 Expand mood detection dataset for better accuracy
 Add collaborative filtering for personalized suggestions
 Support multi-language inputs and voice-based mood input
-![image](https://github.com/user-attachments/assets/8c9627e7-2788-426d-937e-a376949dcff8)
