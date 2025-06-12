@@ -1,4 +1,4 @@
-🎥 Movie Mood Recommender
+**🎥 Movie Mood Recommender**
 
 Lights, camera, recommendation! 🎬 Craving the perfect film to match your current vibe? Look no further than the Movie Mood Recommender. This is your go-to source for discovering cinematic gems tailored to your specific mood. Whether you're feeling happy, sad, adventurous, or romantic, we'll help you find the ideal movie to enhance your experience.
 
@@ -11,7 +11,7 @@ Let your emotions be your guide in cinema! ????️✨
 
 🧠 **Technologies and Tools Used**
 This project combines modern machine learning, natural language processing, and web development tools to create a seamless, real-time movie recommendation experience:
-**Technology	Purpose**
+**Technology Purpose**
 🐍 Python:	Core programming language used throughout the project
 🧾 Pandas:	Data loading, cleaning, and manipulation for movies.csv
 🔢 Scikit-learn	:Training a Naive Bayes classifier and vectorizing text using CountVectorizer
@@ -36,12 +36,17 @@ Column Name	Description
 📅 Year: The release year of the movie (e.g., 2006, 2022)
 🧠 These mood tags are used to filter and recommend relevant movies based on the predicted emotional tone of the user's input.
 
-**Features**
-🎭 Detects your mood from a sentence using TextBlob or a Naive Bayes classifier
-🍿 Recommends movies based on mood (e.g., happy, sad, romantic, motivated)
-🧠 Switch between pre-trained and custom ML models
-🌐 Deployable on Streamlit Cloud
-💡 No prior ML knowledge needed to run!
+**✨ Features**
+🎭 Mood Detection from Text: Enter how you feel in natural language (e.g., "I’m feeling excited!") and the app will detect your mood using either a pre-trained NLP model (TextBlob) or a custom-trained ML classifier (Naive Bayes).
+🍿 Smart Movie Recommendations: Based on the detected mood, the app suggests movies from a curated dataset of 1000+ titles, tagged by genre, mood, and year.
+🔄 Model Toggle:Easily switch between rule-based NLP and machine learning-based prediction for flexible mood detection.
+🔐 User Login and Signup: Secure login system with session-based memory. Each user can log in or create an account without needing a database.
+❤️ Favorites: System Logged-in users can save their favorite movies with a single click and view their personal movie list anytime during their session.
+🧠 Supports 80+ Mood Categories: From "happy" and "romantic" to "philosophical", "witty", "introspective", and beyond — enjoy deep personalization.
+🖥 Streamlit Web Interface: Clean, fast, and interactive user interface built with Streamlit, ideal for deployment on Streamlit Cloud.
+📦 No ML Experience Needed:Beginner-friendly project — everything runs with a few clicks and includes pre-trained models.
+🚀 Fast and Lightweight:Loads instantly, predicts instantly. No heavy dependencies, large models, or external APIs needed.
+🔧 Easily Extendable: Want to add more moods? Expand the dataset? Add ratings or genres? The code is clean and modular for easy upgrades.
 
 **Project Structure**
 movie_mood_recommender/
@@ -93,7 +98,35 @@ streamlit: Used to create the interactive web UI.
 pandas: To read and process the movies.csv file.
 detect_mood: Function using TextBlob for basic mood detection.
 predict_mood: Function using a trained ML model (Naive Bayes) to detect mood.
-
+**🧠 Session State Initialization**
+if "users" not in st.session_state:
+    st.session_state["users"] = {"admin": "admin"}  # default user
+if "logged_in" not in st.session_state:
+    st.session_state["logged_in"] = False
+if "username" not in st.session_state:
+    st.session_state["username"] = ""
+if "favorites" not in st.session_state:
+    st.session_state["favorites"] = {}
+Streamlit doesn’t retain variables across page refreshes, so session_state keeps important user data:
+users: Dictionary of username-password pairs.
+logged_in: Tracks if a user is logged in.
+username: Stores current session’s user.
+favorites: Stores favorite movies per user.
+**🔐 Sign-Up Function**
+def signup():
+UI for new users to register.
+Prevents duplicate usernames.
+Stores credentials in session_state["users"].
+**🔓 Login Function**
+def login():
+UI for existing users to log in.
+Verifies credentials and updates session state.
+Initializes empty favorites list if first-time login.
+**🔑 Authentication Logic**
+if not st.session_state["logged_in"]:
+Displays a radio button to toggle between "Login" and "Sign Up".
+Calls the appropriate function.
+st.stop() halts execution unless the user is logged in.
 **🎬 Main App Content**
 st.title("Movie Mood Recommender")
 st.markdown(f"👤 Logged in as: `{st.session_state['username']}`")
@@ -106,6 +139,12 @@ df = pd.read_csv("movies.csv")
 recs = df[df["mood"].str.lower() == mood.lower()]
 **🎥 Display Movie Recommendations**
 for idx, row in recs.iterrows():
+Allows user to click a ❤️ button to add to favorites.
+**⭐ Favorites Section**
+st.markdown("---")
+st.subheader("⭐ Your Favorite Movies")
+Shows all favorite movies saved by the logged-in user.
+Pulls from session_state["favorites"][username].
 **🛠 Error Handling**
 except Exception as e:
     st.error(f"Error loading movie data: {e}")
@@ -138,7 +177,21 @@ Keyword match:"furious", "rage":angry
 Keyword match:"wholesome", "sweetheartwarming
 Polarity > 0.6	(very positive)	happy
 Polarity < -0.5	(very negative)	sad
-No strong signal	(neutral tone)	neutral
+No strong signal (neutral tone)	neutral
+
+**Deployment**
+On Streamlit
+Link: https://moviemoodrecommender-27d7h5cstjye447eq3snvr.streamlit.app/
+
+**Results**
+After deployment on Streamlit
+![Screenshot 2025-06-12 112121](https://github.com/user-attachments/assets/4559238c-fc7b-4d74-aa85-2c3499dd176f)
+![Screenshot 2025-06-12 112229](https://github.com/user-attachments/assets/38c21084-b9f6-4403-afa2-ec0946a68436)
+![Screenshot 2025-06-12 112304](https://github.com/user-attachments/assets/5e337adb-21b2-4784-80ba-fd0fac0f585f)
+![Screenshot 2025-06-12 112338](https://github.com/user-attachments/assets/90f06883-3f48-4f90-86b0-848e3724cbbb)
+![Screenshot 2025-06-12 112400](https://github.com/user-attachments/assets/bd701e8d-e055-4c28-933d-242dfc73a17f)
+
+**NOTE: ALL THE DATA PROVIDED IN CSV AND PKL FILES WAS TAKEN THROUGH CHATGPT AND THE CODES WERE EVEN ENHANCED USING CHATGPT**
 
 **🛠 Future Improvements**
 -Integrate real-time movie APIs like TMDb for dynamic recommendations 
