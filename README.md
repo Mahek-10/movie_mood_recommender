@@ -118,6 +118,10 @@ MultinomialNB: Trains a text classification model
 joblib: Saves model and vectorizer for later use
 model.pkl, vectorizer.pkl: Used in the Streamlit app to detect moods
 
+**✅ Summary of ml_model_predictor.py**
+predict_mood()	Combines both: preprocesses input and outputs the predicted mood
+model.pkl: A Multinomial Naive Bayes classifier trained to classify text into one of 80+ moods.
+vectorizer.pkl: A CountVectorizer trained on the same text used during model training — it converts input text into the correct numerical format (bag-of-words).
 def predict_mood(text):
 Defines a function that accepts one input — the user's text (e.g., "I'm feeling excited and motivated!").
 X = vectorizer.transform([text])
@@ -127,6 +131,14 @@ vectorizer.transform() tokenizes the input based on the vocabulary learned durin
 return model.predict(X)[0]
 Uses the trained model to predict the mood of the input.
 .predict(X) returns a list/array of predictions, so [0] takes the first result.
+
+✅ Summary Table
+Strategy: Method Used: Output Example
+Keyword match:"furious", "rage":angry
+Keyword match:"wholesome", "sweetheartwarming
+Polarity > 0.6	(very positive)	happy
+Polarity < -0.5	(very negative)	sad
+No strong signal	(neutral tone)	neutral
 
 🛠 Future Improvements
 Add real-time movie API (e.g., TMDb)
