@@ -110,7 +110,7 @@ for idx, row in recs.iterrows():
 except Exception as e:
     st.error(f"Error loading movie data: {e}")
 
-✅ Summary of
+**✅ Summary of custom_model.py**
 moods:List of mood labels the model can recognize
 sample_text:Basic sentence for each mood to simulate input
 CountVectorizer:Converts text to numerical features
