@@ -185,10 +185,18 @@ Link: https://moviemoodrecommender-27d7h5cstjye447eq3snvr.streamlit.app/
 
 **Results**
 After deployment on Streamlit
+First page
 ![Screenshot 2025-06-12 112121](https://github.com/user-attachments/assets/4559238c-fc7b-4d74-aa85-2c3499dd176f)
+
+Sign up
 ![Screenshot 2025-06-12 112229](https://github.com/user-attachments/assets/38c21084-b9f6-4403-afa2-ec0946a68436)
+
+Login
 ![Screenshot 2025-06-12 112304](https://github.com/user-attachments/assets/5e337adb-21b2-4784-80ba-fd0fac0f585f)
+
 ![Screenshot 2025-06-12 112338](https://github.com/user-attachments/assets/90f06883-3f48-4f90-86b0-848e3724cbbb)
+
+Main page
 ![Screenshot 2025-06-12 112400](https://github.com/user-attachments/assets/bd701e8d-e055-4c28-933d-242dfc73a17f)
 
 **NOTE: ALL THE DATA PROVIDED IN CSV AND PKL FILES WAS TAKEN THROUGH CHATGPT AND THE CODES WERE EVEN ENHANCED USING CHATGPT**
