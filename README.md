@@ -36,14 +36,14 @@ Column Name	Description
 📅 Year: The release year of the movie (e.g., 2006, 2022)
 🧠 These mood tags are used to filter and recommend relevant movies based on the predicted emotional tone of the user's input.
 
-📌 Features
+**Features**
 🎭 Detects your mood from a sentence using TextBlob or a Naive Bayes classifier
 🍿 Recommends movies based on mood (e.g., happy, sad, romantic, motivated)
 🧠 Switch between pre-trained and custom ML models
 🌐 Deployable on Streamlit Cloud
 💡 No prior ML knowledge needed to run!
 
-📁 Project Structure
+**Project Structure**
 movie_mood_recommender/
 │
 ├── app.py                  # 🎯 Main Streamlit app for UI and logic
@@ -59,7 +59,7 @@ movie_mood_recommender/
 └── README.md               # 📘 Project documentation
 
 
-📦 Requirements
+**📦 Requirements**
 streamlit>=1.30.0
 textblob>=0.17.1
 scikit-learn>=1.2.0
@@ -68,7 +68,7 @@ joblib>=1.2.0
 numpy>=1.23.0
 
 
-🧠 Tech Stack
+**🧠 Tech Stack**
 Layer,Technology Used,Description
 👨‍💻 Frontend UI,Streamli,Interactive and fast web interface for input/output
 🧠 Mood Detection,TextBlob (Rule-based),NLP sentiment analysis for basic mood classification
@@ -82,6 +82,33 @@ Lightweight ⚡
 Easy to deploy 🚀
 Beginner-friendly 🎓
 Fully customizable 🔧
+
+**📦 Import Statements**
+"import streamlit as st
+import pandas as pd
+from mood_model import detect_mood
+from ml_model_predictor import predict_mood"
+
+streamlit: Used to create the interactive web UI.
+pandas: To read and process the movies.csv file.
+detect_mood: Function using TextBlob for basic mood detection.
+predict_mood: Function using a trained ML model (Naive Bayes) to detect mood.
+
+**🎬 Main App Content**
+st.title("Movie Mood Recommender")
+st.markdown(f"👤 Logged in as: `{st.session_state['username']}`")
+**💬 Mood Input & Detection**
+user_input = st.text_input("How are you feeling right now?")
+use_custom_model = st.checkbox("Use Custom Trained Model")
+**🧠 Predict Mood & Filter Recommendations**
+mood = predict_mood(...) or detect_mood(...)
+df = pd.read_csv("movies.csv")
+recs = df[df["mood"].str.lower() == mood.lower()]
+**🎥 Display Movie Recommendations**
+for idx, row in recs.iterrows():
+**🛠 Error Handling**
+except Exception as e:
+    st.error(f"Error loading movie data: {e}")
 
 
 🛠 Future Improvements
