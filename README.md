@@ -141,7 +141,7 @@ Polarity < -0.5	(very negative)	sad
 No strong signal	(neutral tone)	neutral
 
 **🛠 Future Improvements**
-Integrate real-time movie APIs like TMDb for dynamic recommendations 
-Expand mood detection dataset for better accuracy
-Add collaborative filtering for personalized suggestions
-Support multi-language inputs and voice-based mood input
+-Integrate real-time movie APIs like TMDb for dynamic recommendations 
+=Expand mood detection dataset for better accuracy
+-Add collaborative filtering for personalized suggestions
+-Support multi-language inputs and voice-based mood input
