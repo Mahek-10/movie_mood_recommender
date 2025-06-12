@@ -1,4 +1,4 @@
-**🎥 Movie Mood Recommender**
+**🎥MOVIE MOOD RECOMMENDER**
 
 Lights, camera, recommendation! 🎬 Craving the perfect film to match your current vibe? Look no further than the Movie Mood Recommender. This is your go-to source for discovering cinematic gems tailored to your specific mood. Whether you're feeling happy, sad, adventurous, or romantic, we'll help you find the ideal movie to enhance your experience.
 
