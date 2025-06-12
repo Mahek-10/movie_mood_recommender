@@ -110,6 +110,23 @@ for idx, row in recs.iterrows():
 except Exception as e:
     st.error(f"Error loading movie data: {e}")
 
+✅ Summary of
+moods:List of mood labels the model can recognize
+sample_text:Basic sentence for each mood to simulate input
+CountVectorizer:Converts text to numerical features
+MultinomialNB: Trains a text classification model
+joblib: Saves model and vectorizer for later use
+model.pkl, vectorizer.pkl: Used in the Streamlit app to detect moods
+
+def predict_mood(text):
+Defines a function that accepts one input — the user's text (e.g., "I'm feeling excited and motivated!").
+X = vectorizer.transform([text])
+Converts the input string into a format that the model understands:
+vectorizer.transform() tokenizes the input based on the vocabulary learned during training.
+[text] wraps the string in a list because the model expects a list or array of inputs.
+return model.predict(X)[0]
+Uses the trained model to predict the mood of the input.
+.predict(X) returns a list/array of predictions, so [0] takes the first result.
 
 🛠 Future Improvements
 Add real-time movie API (e.g., TMDb)
